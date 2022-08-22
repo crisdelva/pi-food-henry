@@ -1,0 +1,38 @@
+.searchDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.srcIn{
+    width: 90%;
+    height: 100%;
+    background-color:rgba(250, 235, 215, 0.82);
+    margin-top: 0.5em;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius:0.3em;
+    border-bottom-left-radius:0.8em ;
+    border-bottom-right-radius:0.8em ;
+    font-size: 2em;
+    padding-left: 1em;
+    box-shadow: 0.4em 1.3em 1em rgba(0,0,0,0.8),
+    0.65em 1.2em 1.1em rgb(63, 62, 62,0.5),
+    0.85em 1.2em 1.3em rgba(0,0,0,0.8); 
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 450;
+    text-shadow: 1em;
+}
+.srcBtn{
+    border-top-right-radius:0.4em;
+    border-bottom-right-radius:1.2em ;
+    transform: translate(7em,-1.4em);
+    background-color: rgba(250, 235, 215, 0.862);
+    font-size: 2.1em;
+    border: none;
+
+}

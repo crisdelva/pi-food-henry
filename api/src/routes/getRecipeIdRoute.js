@@ -1,7 +1,7 @@
 const { default: axios } = require('axios');
 const {Router} = require('express');
 const { Type,Recipe } = require('../db');
-const {FOOD_APY_KEY} = process.env
+const {FOOD_API_KEY,FOOD_API_KEY1,FOOD_API_KEY2,FOOD_API_KEY3} = process.env
 
 
 const recipeIdRoute= Router();
@@ -10,7 +10,7 @@ recipeIdRoute.get('/:id', async(req,res)=>{
     let {id} = req.params;
     try{
         if(!id.includes("-")){
-        let data = (await axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${FOOD_APY_KEY}`)).data
+        let data = (await axios.get(`https://api.spoonacular.com/recipes/${id}/information?apiKey=${FOOD_API_KEY?FOOD_API_KEY:FOOD_API_KEY1?FOOD_API_KEY1:FOOD_API_KEY2?FOOD_API_KEY2:FOOD_API_KEY3}`)).data
         let dataApi= {
                         id: data.id,
                         name:data.title,

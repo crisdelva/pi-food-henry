@@ -1,8 +1,7 @@
 require('dotenv').config();
 const axios = require("axios").default;
 const { Type, Recipe } = require("../db");
-const {FOOD_API_KEY,FOOD_API_KEY1,FOOD_API_KEY2,FOOD_API_KEY3} = process.env
-/* ${FOOD_APY_KEY0 ? FOOD_APY_KEY0 : FOOD_APY_KEY1 ? FOOD_APY_KEY1 : FOOD_APY_KEY2 ? FOOD_APY_KEY2 : FOOD_APY_KEY3?FOOD_APY_KEY3:FOOD_APY_KEY4?FOOD_APY_KEY4:FOOD_APY_KEY5} */
+const { FOOD_API_KEY,FOOD_API_KEY1,FOOD_API_KEY2,FOOD_API_KEY3 } = process.env
 
 const getApiRecipes = async () => {
     try {

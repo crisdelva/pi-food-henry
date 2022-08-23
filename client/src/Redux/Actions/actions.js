@@ -14,7 +14,7 @@ export const FILTERHS= "FILTERHS";
 export function getAllRecipes() {
     return async function (dispatch) {
         try {
-            let data = await axios("/recipes")
+            let data = await axios.get("/recipes")
             return dispatch({ type: GET_ALL_RECIPES, payload: data.data })
         }
         catch (error) {
@@ -27,7 +27,7 @@ export function getRecipeDetail(id) {
     return async function (dispatch) {
         try {
             if (id) {
-                let data = await axios(`/recipes/${id}`)
+                let data = await axios.get(`/recipes/${id}`)
                 return dispatch({type: GET_RECIPE_DETAIL, payload: data.data })
                 
             } else {
@@ -43,7 +43,7 @@ export function getRecipeDetail(id) {
 export function getAllTypes() {
     return async function (dispatch) {
         try {
-            let data = await axios("/diets")
+            let data = await axios.get("/diets")
             return dispatch({ type: GET_ALL_TYPES, payload: data.data })
         }
         catch (error) {
